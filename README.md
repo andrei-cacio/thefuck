@@ -1,10 +1,10 @@
-# The Fuck [![Build Status](https://travis-ci.org/nvbn/thefuck.svg?branch=master)](https://travis-ci.org/nvbn/thefuck) 
+# The Fuck [![Build Status](https://travis-ci.org/nvbn/thefuck.svg?branch=master)](https://travis-ci.org/nvbn/thefuck) romanian version
 
 Magnificent app which corrects your previous console command,
 inspired by a [@liamosaur](https://twitter.com/liamosaur/)
 [tweet](https://twitter.com/liamosaur/status/506975850596536320).
 
-[![gif with examples](https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif)](https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif)
+[![asciicast](https://asciinema.org/a/ar3tgn4i93xt3i4q82exy0kl9.png)](https://asciinema.org/a/ar3tgn4i93xt3i4q82exy0kl9)
 
 Few more examples:
 
@@ -97,7 +97,7 @@ Reading package lists... Done
 ## Installation [*experimental*]
 
 On Ubuntu and OS X you can install `The Fuck` with installation script:
- 
+
 ```bash
 wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
 ```
@@ -281,7 +281,7 @@ The Fuck has a few settings parameters which can be changed in `$XDG_CONFIG_HOME
 * `no_colors` &ndash; disable colored output;
 * `priority` &ndash; dict with rules priorities, rule with lower `priority` will be matched first;
 * `debug` &ndash; enables debug output, by default `False`;
-* `history_limit` &ndash; numeric value of how many history commands will be scanned, like `2000`; 
+* `history_limit` &ndash; numeric value of how many history commands will be scanned, like `2000`;
 
 Example of `settings.py`:
 
@@ -298,7 +298,7 @@ debug = False
 Or via environment variables:
 
 * `THEFUCK_RULES` &ndash; list of enabled rules, like `DEFAULT_RULES:rm_root` or `sudo:no_command`;
-* `THEFUCK_EXCLUDE_RULES` &ndash; list of disabled rules, like `git_pull:git_push`; 
+* `THEFUCK_EXCLUDE_RULES` &ndash; list of disabled rules, like `git_pull:git_push`;
 * `THEFUCK_REQUIRE_CONFIRMATION` &ndash; require confirmation before running new command, `true/false`;
 * `THEFUCK_WAIT_COMMAND` &ndash; max amount of time in seconds for getting previous command output;
 * `THEFUCK_NO_COLORS` &ndash; disable colored output, `true/false`;
