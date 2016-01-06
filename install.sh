@@ -38,15 +38,15 @@ install_thefuck () {
 
     # Setup aliases:
     if should_add_alias ~/.bashrc; then
-        echo 'eval $(thefuck --alias)' >> ~/.bashrc
+        echo 'eval $(thefuck --alias futui)' >> ~/.bashrc
     fi
 
     if should_add_alias ~/.bash_profile; then
-        echo 'eval $(thefuck --alias)' >> ~/.bash_profile
+        echo 'eval $(thefuck --alias futui)' >> ~/.bash_profile
     fi
 
     if should_add_alias ~/.zshrc; then
-        echo 'eval $(thefuck --alias)' >> ~/.zshrc
+        echo 'eval $(thefuck --alias futui)' >> ~/.zshrc
     fi
 
     if should_add_alias ~/.config/fish/config.fish; then
@@ -54,7 +54,7 @@ install_thefuck () {
     fi
 
     if should_add_alias ~/.tcshrc; then
-        echo 'eval `thefuck --alias`' >> ~/.tcshrc
+        echo 'eval `thefuck --alias futui`' >> ~/.tcshrc
     fi
 }
 
